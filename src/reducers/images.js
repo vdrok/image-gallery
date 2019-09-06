@@ -1,4 +1,4 @@
-import { SET_IMAGES } from '../constants';
+import { SET_IMAGES, SET_FAVORITE } from '../constants';
 
 const initialState = { images: [] };
 
@@ -11,6 +11,18 @@ export default function setBrowserInfo(state = initialState, action) {
         image.thumbnail = image.thumbnailUrl;
         image.alt = 'gallery';
         image.isFavorite = false;
+        return image;
+      });
+      return {
+        ...state,
+        images,
+        loaded: true,
+      };
+    case SET_FAVORITE:
+      images = state.images.map(image => {
+        if (image.id === action.id) {
+          image.isFavorite = !image.isFavorite;
+        }
         return image;
       });
       return {
