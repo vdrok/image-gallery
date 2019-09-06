@@ -1,0 +1,38 @@
+.resize-iframe {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-width: 0;
+  position: fixed;
+  background-color: transparent;
+  width: 100%;
+}
+
+.ReactGridGallery_tile {
+  position: relative;
+  float: left;
+  background: #eee;
+  padding: 0;
+}
+
+.ReactGridGallery_tile-icon-bar {
+  opacity: 1;
+  position: absolute;
+  height: 30px;
+  width: 100%;
+}
+
+.ReactGridGallery_tile-icon {
+  background: none;
+  float: left;
+  width: 30px;
+  height: 30px;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.ReactGridGallery_tile-icon img {
+  width: 24px;
+}

@@ -11,12 +11,16 @@
     "jest": true
 },
 "rules": {
-    "max-len": ["error", {"code": 100}],
     "prefer-promise-reject-errors": ["off"],
-    "react/jsx-filename-extension": ["off"],
     "react/prop-types": ["warn"],
     "no-return-assign": ["off"],
     "no-use-before-define": ["off"],
-    "no-param-reassign": ["off"]
+    "no-param-reassign": ["off"],
+    "react/destructuring-assignment": ["off"],
+    "react/jsx-filename-extension": ["off"],
+    "jsx-a11y/mouse-events-have-key-events": ["off"],
+    "jsx-a11y/click-events-have-key-events": ["off"],
+    "jsx-a11y/no-static-element-interactions": ["off"],
+    "react/jsx-props-no-spreading": ["off"]
   }
 }
