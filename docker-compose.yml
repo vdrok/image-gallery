@@ -1,0 +1,10 @@
+version: '1'
+services:
+  imagegallerywebapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 80:3200
+    environment:
+      - NODE_ENV=dev

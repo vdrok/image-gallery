@@ -2,7 +2,7 @@ import * as actions from '../src/actions'
 import * as types from '../src/constants'
 
 describe('actions', () => {
-  it('should create an action to add a todo', () => {
+  it('should create an action to set images', () => {
     const images = [
     	{
     		albumId: 1,
