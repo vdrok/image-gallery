@@ -1,11 +1,16 @@
-import { put, takeLatest, call } from 'redux-saga/effects';
+import { put, takeLatest, call, select } from 'redux-saga/effects';
 
 import { GET_IMAGES_SAGA } from '../../constants';
-import { setImages } from '../../actions';
+import { setImages, setPageCount } from '../../actions';
 import getImages from '../../lib/api';
+
+const getPerPage = state => state.imagesReducer.perPage;
 
 function* workerGetImagesSaga() {
   const images = yield call(getImages);
+  const perPage = yield select(getPerPage);
+  const pageCount = Math.ceil(images.length / perPage);
+  yield put(setPageCount(pageCount));
   yield put(setImages(images));
 }
 

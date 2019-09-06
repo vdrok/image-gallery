@@ -1,10 +1,14 @@
 const GET_IMAGES_SAGA = 'GET_IMAGES_SAGA';
 const SET_IMAGES = 'SET_IMAGES';
 const SET_FAVORITE = 'SET_FAVORITE';
+const SET_PAGE_COUNT = 'SET_PAGE_COUNT';
+const SET_PER_PAGE = 'SET_PER_PAGE';
 
 export {
   //eslint-disable-line
   GET_IMAGES_SAGA,
   SET_IMAGES,
   SET_FAVORITE,
+  SET_PAGE_COUNT,
+  SET_PER_PAGE,
 };
