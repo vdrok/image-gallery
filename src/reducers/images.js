@@ -1,4 +1,4 @@
-import { SET_IMAGES, SET_FAVORITE } from '../constants';
+import { SET_IMAGES, SET_FAVORITE, SET_PER_PAGE, SET_PAGE_COUNT } from '../constants';
 
 const initialState = { images: [] };
 
@@ -28,6 +28,16 @@ export default function setBrowserInfo(state = initialState, action) {
       return {
         ...state,
         images,
+      };
+    case SET_PER_PAGE:
+      return {
+        ...state,
+        perPage: action.n,
+      };
+    case SET_PAGE_COUNT:
+      return {
+        ...state,
+        pageCount: action.n,
       };
     default:
       return state;
