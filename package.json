@@ -20,11 +20,12 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject",
     "precommit": "lint-staged",
     "lint": "eslint --fix src",
-    "prettier": "prettier --write '@(src)/**/*.@(js|css)' '*.js'"
+    "prettier": "prettier --write '@(src)/**/*.@(js|css)' '*.js'",
+    "test:watch": "npm test -- --watch"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -42,7 +43,9 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0-0",
     "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
     "eslint": "^5.0.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.2.0",
