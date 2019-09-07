@@ -43,3 +43,8 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 
 Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
 
+## Demo
+
+Open [https://nazar-image-gallery.herokuapp.com](https://nazar-image-gallery.herokuapp.com) to view it in the browser.
+
+
